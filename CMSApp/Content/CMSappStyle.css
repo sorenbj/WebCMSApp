@@ -1,0 +1,55 @@
+﻿body {
+    background-color: white;
+}
+
+blockquote {
+    margin: 0 0 0 0;
+}
+
+footer{
+    background-color: #f8f8f8;
+    border-top: solid 1px #e7e7e7;
+    margin-top: 40px;
+}
+footer p a{
+    margin-right:10px;
+}
+
+td, th {
+    padding: 5px 15px;
+    text-align: center;
+}
+
+.btn {
+    margin-top: 16px;
+}
+
+.bluebottom {
+    background-color: #337ab7;
+    color: white;
+    padding: 10px 0;
+}
+
+.bluebottom p {
+    margin-bottom: 0;
+}
+
+.SelectedJokes {
+    background-color: #337ab7;
+    padding: 20px 50px;
+    color: white;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.line {
+    border: 1px solid #337ab7;
+}
+
+.SelectedProducts {
+    min-height: 330px;
+}
+
+.highlight {
+    background-color: #DDD;
+}

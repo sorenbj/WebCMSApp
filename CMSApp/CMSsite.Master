@@ -1,0 +1,107 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CMSsite.master.cs" Inherits="CMSApp.CMSsite" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>CMS system 2016</title>
+    <link href="Content/normalize.css" rel="stylesheet" /> <!-- Reset CSS -->
+    <link href="Content/bootstrap.min.css" rel="stylesheet" /> <!-- Bootstrap -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="Content/CMSappStyle.css" rel="stylesheet" /> <!-- Personal styles -->
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+    <meta name="description" content="The description of my page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <!-- Navigation -->
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-static">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="Index.aspx">CMS Project</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="Index.aspx">Home</a></li>
+              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Select Content<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="SelectContent.aspx#Product">Product</a></li>
+                    <li><a href="SelectContent.aspx#Joke">Joke</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Create Content<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="CreateContent.aspx#ProductType">Producttype</a></li>
+                    <li><a href="CreateContent.aspx#Company">Company</a></li>
+                    <li><a href="CreateContent.aspx#Product">Product</a></li>
+                    <li><a href="CreateContent.aspx#Joke">Joke</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Update Content
+                      <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="UpdateContent.aspx#ProductType">Producttype</a></li>
+                    <li><a href="UpdateContent.aspx#Company">Company</a></li>
+                    <li><a href="UpdateContent.aspx#Product">Product</a></li>
+                    <li><a href="UpdateContent.aspx#Joke">Joke</a></li>
+                    <li><a href="UpdateContent.aspx#File">Files</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="register.aspx">Register <span class="sr-only">(current)</span></a></li>
+            <li><a href="login.aspx"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Log in <span class="sr-only">(current)</span></a></li>
+        </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <!-- Content -->
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        
+
+
+        </asp:ContentPlaceHolder>
+    </form>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="col-lg-4">
+                <h2>CMS Company</h2>
+                <hr />
+                <Address>
+                    <p>Nørgaardsvej 30</p>
+                    <p>2800 Kgs. Lyngby</p>
+                    <p>Phone: 36 15 45 04</p>
+                </Address>
+            </div>
+            <div class="col-lg-4">
+                <h2>Open hours</h2>
+                <hr />
+                <p>Monday - thursday: <span class="pull-right">08:00 - 15:30</span></p>
+                <p>friday: <span class="pull-right">08:00 - 14:00</span></p>
+                <p>Weekend: <span class="pull-right">Closed</span></p>
+            </div>
+            <div class="col-lg-4">
+                <h2>Follow us</h2>
+                <hr />
+                <p>
+                    <a href="#"><i class="fa fa-facebook-square fa-3x"  aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-google-plus-square fa-3x" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-vimeo-square fa-3x" aria-hidden="true"></i></a>
+                </p>
+            </div>
+        </div>
+        <div class="bluebottom">
+            <p class="text-center">CMS project - Web Development 2016</p>
+        </div>
+    </footer>
+    <script src="Scripts/jquery-2.2.3.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+</body>
+</html>
